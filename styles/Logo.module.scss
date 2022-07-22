@@ -1,0 +1,30 @@
+.Logo {
+  position: relative;
+}
+
+.TextCenter {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.TextBottom {
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.Path {
+  transform: scale(1);
+  fill: #5B1616;
+  transition: all 0.5s;
+  transform-origin: center center;
+
+  &:hover {
+    transform: scale(1.025);
+    // fill: #5B2636;
+  }
+}
