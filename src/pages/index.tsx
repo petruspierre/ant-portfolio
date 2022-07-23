@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import { Logo } from './components/Logo'
 
@@ -16,7 +17,9 @@ export default function Home() {
       <nav>
         <ul>
           <li className={styles.ItemRight}>
-            <a href="/contato">contato</a>
+            <Link href="/contato">
+              contato
+            </Link>
           </li>
         </ul>
       </nav>
