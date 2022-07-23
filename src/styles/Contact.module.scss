@@ -1,20 +1,109 @@
 .Container {
-  position: absolute;
+  position: relative;
 
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
+  z-index: 2;
 
   background-color: #F22B43;
 }
 
 .Background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #F22B43;
+  height: 100vh;
+  z-index: -1;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  p {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    font-size: 15rem;
+    font-weight: 400;
+    color: #5B1616;
+    letter-spacing: 2rem;
+    margin: 0;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    font-size: 15rem;
+    font-weight: 900;
+    color: #FFD1D1;
+    margin: 0;
+  }
+}
+
+.ItemLeft {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+
+  a {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 0px;
+    transition: all 0.2s ease-in-out;  
+
+    &:hover {
+      margin-left: -5px;
+    }
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.InfoContainer {
+  display: flex;
+  gap: 5rem;
+}
+
+.Info { 
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+
+  p {
+    margin: 0;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      font-size: 1.5rem;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    button {
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+        transform: scale(1.1);
+      }
+    }
+  }
 }
