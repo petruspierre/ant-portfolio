@@ -1,5 +1,8 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+
 import styles from '../styles/Home.module.scss'
 import { Logo } from './components/Logo'
 
@@ -14,11 +17,36 @@ export default function Home() {
 
       <Logo />
 
-      <nav>
+      <nav className={styles.Navigation}>
         <ul>
           <li className={styles.ItemRight}>
             <Link href="/contato">
-              contato
+            <a>
+              <Image height={40} width={18} src="/assets/arrow.svg" alt="" />
+              <span>
+                contato
+              </span>
+            </a>
+            </Link>
+          </li>
+          <li className={styles.ItemBottom}>
+            <Link href="/sobre-mim">
+              <a>
+                <span>
+                  sobre mim
+                </span>
+                <Image width={40} height={40} src="/assets/arrow.svg" alt="" />
+              </a>
+            </Link>
+          </li>
+          <li className={styles.ItemLeft}>
+            <Link href="/meu-trabalho">
+              <a>
+                <span>
+                  meu trabalho
+                </span>
+                <Image height={40} width={18} src="/assets/arrow.svg" alt="" />
+              </a>
             </Link>
           </li>
         </ul>

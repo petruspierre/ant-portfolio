@@ -10,10 +10,90 @@
   background-color: #F22B43;
 }
 
+.Navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #F22B43;
+  color: #5B1616;
+  font-size: 1.5rem;
+
+  ul {
+    list-style-type: none;
+    li {
+      margin-left: -4px;
+      
+      a {
+        gap: 1rem;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
 .ItemRight {
   position: absolute;
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
-  color: white;
+  
+  a {
+    margin-right: 0px;
+    
+    &:hover {
+      margin-right: -5px;
+    }
+  }
+}
+
+.ItemLeft {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  
+  a {
+    margin-left: 0px;
+    
+    &:hover {
+      margin-left: -5px;
+    }
+  }
+
+  span {
+    max-width: 100px;
+  }
+
+  img {
+    transform: rotateY(180deg);
+  }
+}
+
+.ItemBottom {
+  position: absolute;
+  left: 50%;
+  bottom: 2.5%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  
+  a {
+    flex-direction: column;
+    margin-bottom: 0px;
+    
+    &:hover {
+      margin-bottom: -5px;
+    }
+  }
+
+  img {
+    transform: rotate(90deg);
+  }
 }
