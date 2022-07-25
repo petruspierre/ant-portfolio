@@ -3,10 +3,11 @@ import { motion } from 'framer-motion'
 
 import styles from '../styles/Contact.module.scss'
 import Image from 'next/image'
+import { Layout } from './components/Layout'
 
 export default function Contato() {
   return (
-    <>
+    <Layout fromLeft toRight>
       <div className={styles.Container}>
         <motion.div
           className={styles.Background}
@@ -84,6 +85,6 @@ export default function Contato() {
           </div>
         </motion.div>
       </div>
-    </>
+    </Layout>
   )
 }
