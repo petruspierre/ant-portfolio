@@ -52,23 +52,6 @@
   left: 5%;
   transform: translateY(-50%);
 
-  a {
-    font-size: 1.5rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-left: 0px;
-    transition: all 0.2s ease-in-out;  
-
-    &:hover {
-      margin-left: -5px;
-    }
-
-    img {
-      transform: rotate(180deg);
-    }
-  }
-
   @media screen and (max-width: 768px) {
     left: 50%;
     top: unset;

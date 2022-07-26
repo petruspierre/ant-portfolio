@@ -25,13 +25,6 @@
     list-style-type: none;
     li {
       margin-left: -4px;
-      
-      a {
-        gap: 1rem;
-        transition: all 0.3s ease-in-out;
-        display: flex;
-        align-items: center;
-      }
     }
   }
 }
@@ -41,14 +34,6 @@
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
-  
-  a {
-    margin-right: 0px;
-    
-    &:hover {
-      margin-right: -5px;
-    }
-  }
 }
 
 .ItemLeft {
@@ -56,21 +41,9 @@
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  
-  a {
-    margin-left: 0px;
-    
-    &:hover {
-      margin-left: -5px;
-    }
-  }
 
   span {
     max-width: 100px;
-  }
-
-  img {
-    transform: rotateY(180deg);
   }
 }
 
@@ -80,17 +53,4 @@
   bottom: 2.5%;
   transform: translateX(-50%);
   flex-direction: column;
-  
-  a {
-    flex-direction: column;
-    margin-bottom: 0px;
-    
-    &:hover {
-      margin-bottom: -5px;
-    }
-  }
-
-  img {
-    transform: rotate(90deg);
-  }
 }

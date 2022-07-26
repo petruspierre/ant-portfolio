@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import styles from '../styles/Contact.module.scss'
 import Image from 'next/image'
 import { Layout } from './components/Layout'
+import ArrowLink from './components/ArrowLink'
 
 const animations = {
   left: {
@@ -48,12 +49,7 @@ export default function Contato() {
         </motion.div>
 
         <div className={styles.ItemLeft}>
-          <Link href="/">
-            <a>
-              Voltar
-              <Image height={40} width={18} src="/assets/arrow.svg" alt="" />
-            </a>
-          </Link>
+          <ArrowLink link="/" label="voltar" left />
         </div>
 
         <motion.div 

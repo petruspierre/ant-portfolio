@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/AboutMe.module.scss'
+import ArrowLink from './components/ArrowLink'
 
 import { Layout } from './components/Layout'
 
@@ -10,12 +11,7 @@ export default function SobreMim() {
       <div className={styles.Container}>
         <header className={styles.Header}>
           <div>
-            <Link href="/">
-              <a>
-                voltar
-                <Image height={40} width={18} src="/assets/arrow.svg" alt="" />
-              </a>
-            </Link>
+            <ArrowLink link="/" label="voltar" top />
           </div>
         </header>
 
