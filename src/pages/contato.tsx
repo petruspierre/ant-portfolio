@@ -5,6 +5,23 @@ import styles from '../styles/Contact.module.scss'
 import Image from 'next/image'
 import { Layout } from './components/Layout'
 
+const animations = {
+  left: {
+    x: -100
+  },
+  right: {
+    x: -50
+  },
+  
+}
+
+const transitions = {
+  big: {
+    duration: 10,
+    ease: 'easeOut',
+  }
+}
+
 export default function Contato() {
   return (
     <Layout fromLeft toRight>
@@ -13,30 +30,18 @@ export default function Contato() {
           className={styles.Background}
         >
           <motion.p
-            initial={{
-              x: -100
-            }}
-            animate={{
-              x: -50
-            }}
-            transition={{
-              duration: 10,
-              ease: 'easeOut',
-            }}
+            variants={animations}
+            initial={'left'}
+            animate={'right'}
+            transition={transitions.big}
           >
             contato
           </motion.p>
           <motion.h1
-            initial={{
-              x: -50
-            }}
-            animate={{
-              x: -100
-            }}
-            transition={{
-              duration: 10,
-              ease: 'easeOut',
-            }}
+            variants={animations}
+            initial={'right'}
+            animate={'left'}
+            transition={transitions.big}
           >
             CONTATO
           </motion.h1>
