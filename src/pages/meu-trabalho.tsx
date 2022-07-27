@@ -1,7 +1,6 @@
-import styles from '../styles/MyWork.module.scss'
-import ArrowLink from './components/ArrowLink'
-
-import { Layout } from './components/Layout'
+import styles from '../styles/pages/MyWork.module.scss'
+import ArrowLink from '../components/ArrowLink'
+import { Layout } from '../components/Layout'
 
 export default function SobreMim() {
   return (

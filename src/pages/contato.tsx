@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-
-import styles from '../styles/Contact.module.scss'
 import Image from 'next/image'
-import { Layout } from './components/Layout'
-import ArrowLink from './components/ArrowLink'
+
+import styles from '../styles/pages/Contact.module.scss'
+import { Layout } from '../components/Layout'
+import ArrowLink from '../components/ArrowLink'
 
 const animations = {
   left: {
