@@ -34,6 +34,12 @@
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
+
+  @media screen and (max-width: 768px) {
+    top: unset;
+    right: 7.5%;
+    bottom: 10%;
+  }
 }
 
 .ItemLeft {
@@ -45,12 +51,25 @@
   span {
     max-width: 100px;
   }
+
+  @media screen and (max-width: 768px) {
+    top: unset;
+    left: 7.5%;
+    bottom: 10%;
+  }
 }
 
 .ItemBottom {
   position: absolute;
-  left: 50%;
+  right: 50.675%;
   bottom: 2.5%;
-  transform: translateX(-50%);
+  transform: translateX(50%);
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    a {
+      flex-direction: column-reverse !important;
+      gap: 0 !important; 
+    }
+  }
 }
