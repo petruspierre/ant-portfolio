@@ -4,7 +4,7 @@ export function Logo() {
   return (
     <div className={styles.Logo}>
       <p className={styles.TextCenter}>adson formiga</p>
-      <p className={styles.TextBottom}>designer de interfaces</p>
+      <p className={styles.TextBottom}>adson_ant</p>
       <svg width="100%" height="100%" viewBox="-5 -10 499 580" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path className={styles.Path} fillRule="evenodd" clipRule="evenodd" d="M163.016 39.9616C163.016 17.8914 145.124 0 123.054 0H121.48C99.4092 0 81.5173 17.892 81.5173 39.9628V39.9628C81.5173 62.0336 99.4092 79.9256 121.48 79.9256H123.032C145.102 79.9256 162.994 97.817 162.994 119.887V119.887C162.994 141.957 180.885 159.849 202.955 159.849H204.529C226.6 159.849 244.492 141.957 244.492 119.886V119.886C244.492 97.8152 226.6 79.9233 204.529 79.9233H202.977C180.907 79.9233 163.016 62.0318 163.016 39.9616V39.9616Z" />
         <path className={styles.Path} fillRule="evenodd" clipRule="evenodd" d="M0.000491527 359.662C0.000491527 337.591 17.8924 319.699 39.9633 319.699H41.5359C63.6068 319.699 81.4987 337.591 81.4987 359.662V359.662C81.4987 381.733 63.6068 399.625 41.5359 399.625H39.9633C17.8924 399.625 0.000491527 381.733 0.000491527 359.662 V359.662Z" />

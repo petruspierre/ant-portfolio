@@ -10,7 +10,6 @@ import ArrowLink from './components/ArrowLink'
 export default function Home() {
   return (
     <Layout fromTop>
-
       <div className={styles.Container}>
         <Head>
           <title>Create Next App</title>

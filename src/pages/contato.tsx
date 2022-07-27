@@ -23,7 +23,22 @@ const transitions = {
   }
 }
 
+const EMAIL = 'adson.formiga@gmail.com'
+const PHONE = '(83) 98635-4504'
+
 export default function Contato() {
+  const copyEmail = () => {
+    if(typeof navigator !== 'undefined') {
+      navigator.clipboard.writeText(EMAIL);
+    }
+  }
+
+  const copyPhone = () => {
+    if(typeof navigator !== 'undefined') {
+      navigator.clipboard.writeText(EMAIL);
+    }
+  }
+
   return (
     <Layout fromLeft toRight>
       <div className={styles.Container}>
@@ -48,43 +63,55 @@ export default function Contato() {
           </motion.h1>
         </motion.div>
 
-        <div className={styles.ItemLeft}>
-          <ArrowLink link="/" label="voltar" left />
+        <div className={styles.Content}>
+          <div className={styles.BackButtonContainer}>
+            <ArrowLink link="/" label="voltar" left />
+          </div>
+
+          <motion.main 
+            initial={{
+              x: 25
+            }}
+            animate={{
+              x: 0
+            }}
+            transition={{
+              duration: 2,
+              ease: 'easeOut',
+            }}
+            className={styles.InfoContainer}
+          >
+            <div className={styles.Info}>
+              <p>
+                email
+                <button onClick={copyEmail}>
+                  <Image width={20} height={20} src="/assets/copy.svg" alt="copiar" title="copiar" />
+                </button>
+              </p>
+              <div>
+                <p>{EMAIL}</p>
+                <button onClick={copyEmail}>
+                  <Image width={20} height={20} src="/assets/copy.svg" alt="copiar" title="copiar" />
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Info}>
+              <p>
+                celular
+                <button onClick={copyEmail}>
+                  <Image width={20} height={20} src="/assets/copy.svg" alt="copiar" title="copiar" />
+                </button>
+              </p>
+              <div>
+                <p>{PHONE}</p>
+                <button onClick={copyPhone}>
+                  <Image width={20} height={20} src="/assets/copy.svg" alt="copiar" title="copiar" />
+                </button>
+              </div>
+            </div>
+          </motion.main>
         </div>
-
-        <motion.div 
-          initial={{
-            x: 25
-          }}
-          animate={{
-            x: 0
-          }}
-          transition={{
-            duration: 2,
-            ease: 'easeOut',
-          }}
-          className={styles.InfoContainer}
-        >
-          <div className={styles.Info}>
-            <p>email</p>
-            <div>
-              <p>adson.formiga@gmail.com</p>
-              <button>
-                <Image width={20} height={20} src="/assets/copy.svg" alt="copiar" title="copiar" />
-              </button>
-            </div>
-          </div>
-
-          <div className={styles.Info}>
-            <p>celular</p>
-            <div>
-              <p>(83) 98635-4504</p>
-              <button>
-                <Image width={20} height={20} src="/assets/copy.svg" alt="copiar" title="copiar" />
-              </button>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </Layout>
   )
