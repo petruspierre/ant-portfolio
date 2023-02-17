@@ -3,8 +3,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 import styles from '../styles/pages/Contact.module.scss'
-import { Layout } from '../components/Layout'
-import ArrowLink from '../components/ArrowLink'
+import { Layout, ArrowLink } from '../components'
 
 const animations = {
   left: {

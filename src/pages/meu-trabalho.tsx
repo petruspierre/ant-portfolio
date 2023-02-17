@@ -1,6 +1,6 @@
 import styles from '../styles/pages/MyWork.module.scss'
-import ArrowLink from '../components/ArrowLink'
-import { Layout } from '../components/Layout'
+
+import { Layout, ArrowLink, Projects } from '../components'
 
 export default function SobreMim() {
   return (
@@ -18,6 +18,10 @@ export default function SobreMim() {
               <ArrowLink link="/" label="voltar" right />
             </div>
           </div>
+        </section>
+
+        <section>
+          <Projects />
         </section>
 
         <footer className={styles.Footer}>

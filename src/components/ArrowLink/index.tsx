@@ -13,7 +13,7 @@ interface ArrowLinkProps {
   label: string;
 }
 
-export default function ArrowLink(props: ArrowLinkProps) {
+export function ArrowLink(props: ArrowLinkProps) {
   const classes = [
     props.left ? styles.Left : "",
     props.right ? styles.Right : "",

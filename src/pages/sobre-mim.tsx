@@ -1,8 +1,7 @@
 import Image from 'next/image'
 
 import styles from '../styles/pages/AboutMe.module.scss'
-import ArrowLink from '../components/ArrowLink'
-import { Layout } from '../components/Layout'
+import { Layout, ArrowLink } from '../components'
 
 export default function SobreMim() {
   return (

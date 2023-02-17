@@ -1,9 +1,7 @@
 import Head from 'next/head'
 
 import styles from '../styles/pages/Home.module.scss'
-import { Logo } from '../components/Logo'
-import { Layout } from '../components/Layout'
-import ArrowLink from '../components/ArrowLink'
+import { Layout, Logo, ArrowLink } from '../components'
 
 export default function Home() {
   return (
