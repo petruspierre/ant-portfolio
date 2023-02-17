@@ -1,7 +1,8 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from './styles/ArrowLink.module.scss'
+import styles from './styles.module.scss'
 
 interface ArrowLinkProps {
   left?: boolean;
